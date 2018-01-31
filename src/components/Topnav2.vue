@@ -2,10 +2,10 @@
     <div class="topnav">
       <ul>
         <li><router-link to="./Recommendation"  class="zp_navTopWord">推荐</router-link></li>
-        <li><router-link to="./King" class="zp_navTopWord" >王者荣耀</router-link></li>
-        <li><router-link to="./Seeklive" class="zp_navTopWord" >绝地求生</router-link></li>
-        <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
         <li><router-link to="./Start" class="zp_navTopWord" >星秀</router-link></li>
+        <li><router-link to="./Towci" class="zp_navTopWord" >二次元</router-link></li>
+        <li><router-link to="./Huwai" class="zp_navTopWord" >户外</router-link></li>
+        <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
         <li><router-link to="./Eat" class="zp_navTopWord" >吃喝玩乐</router-link></li>
       </ul>
       <div class="topbarbutton">
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'Topnav',
+  name: 'Topnav2',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

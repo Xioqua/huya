@@ -1,12 +1,16 @@
 <template>
   <div class="index">
     <Topnav></Topnav>
+    <Search></Search>
+    <Slide></Slide>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Topnav from './Topnav'
+import Search from './Search'
+import Slide from './Slide'
 
 export default {
   name: 'Index',
@@ -16,7 +20,9 @@ export default {
     }
   },
   components: {
-    Topnav
+    Topnav,
+    Search,
+    Slide
   }
 }
 </script>

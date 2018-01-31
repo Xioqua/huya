@@ -50,3 +50,13 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 2. zhangpan: 主攻路由页面关系管理,少许
 3. yanliang: json文件编写
 4. zhangyahui: 静态页面制作
+
+---
+
+- App
+  - Tabbar
+
+- Index
+  - Topnav
+
+要求App和4个标签页面只能放标签,其他一律拆成组件。你们可以看看App和Index里的template标签。

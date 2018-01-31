@@ -39,7 +39,15 @@ export default new Router({
     {
       path: '/amusement',
       name: 'Amusement',
-      component: Amusement
+      component: Amusement,
+      children:[
+        {path:'/Recommendation',name:'Recommendation',component:Recommendation},
+        {path:'/Start',name:'Start',component:Start},
+        {path:'/Lol',name:'Recommendation',component:Lol},
+        {path:'/Seeklive',name:'Recommendation',component:Seeklive},
+        {path:'/Start',name:'Recommendation',component:Start},
+        {path:'/Eat',name:'Recommendation',component:Eat}
+      ]
     },
     {
       path: '/explore',

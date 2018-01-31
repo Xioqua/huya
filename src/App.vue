@@ -32,5 +32,6 @@ body { font-size: 20px;}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  overflow-x: hidden; /* 横向滚动禁止 */
 }
 </style>
