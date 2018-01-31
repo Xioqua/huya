@@ -1,5 +1,5 @@
 <template>
-  <div class="person">
+  <div class="amusement">
     这是"娱乐"标签页
   </div>
 </template>

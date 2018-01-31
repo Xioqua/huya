@@ -22,6 +22,9 @@ export default {
 ul,li{list-style: none;}
 a {text-decoration: none;}
 
+a:link,a:visited {color: #373737;}
+body { font-size: 20px;} 
+
 /* 全局整个APP样式 */
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -29,6 +32,5 @@ a {text-decoration: none;}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px; /*此样式需要重置掉*/
 }
 </style>

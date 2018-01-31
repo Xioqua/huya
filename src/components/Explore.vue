@@ -1,5 +1,5 @@
 <template>
-  <div class="person">
+  <div class="explore">
     这是"发现"标签页
   </div>
 </template>
