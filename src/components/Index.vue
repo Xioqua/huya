@@ -3,6 +3,7 @@
     <Topnav></Topnav>
     <Search></Search>
     <Slide></Slide>
+    <DataList></DataList>
     <router-view></router-view>
   </div>
 </template>
@@ -11,6 +12,7 @@
 import Topnav from './Topnav'
 import Search from './Search'
 import Slide from './Slide'
+import DataList from './DataList'
 
 export default {
   name: 'Index',
@@ -22,7 +24,8 @@ export default {
   components: {
     Topnav,
     Search,
-    Slide
+    Slide,
+    DataList
   }
 }
 </script>
