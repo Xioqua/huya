@@ -3,7 +3,14 @@
     <Topnav></Topnav>
     <Search></Search>
     <Slide></Slide>
-    <DataList></DataList>
+    <Datahead></Datahead>
+    <Datalist></Datalist>
+    <Delimiter></Delimiter>
+    <Datahead></Datahead>
+    <Datalist></Datalist>
+    <Delimiter></Delimiter>
+    <Datahead></Datahead>
+    <Datalist></Datalist>
     <router-view></router-view>
   </div>
 </template>
@@ -12,7 +19,9 @@
 import Topnav from './Topnav'
 import Search from './Search'
 import Slide from './Slide'
-import DataList from './DataList'
+import Datahead from './Datahead'
+import Datalist from './Datalist'
+import Delimiter from './Delimiter'
 
 export default {
   name: 'Index',
@@ -25,7 +34,9 @@ export default {
     Topnav,
     Search,
     Slide,
-    DataList
+    Datahead,
+    Datalist,
+    Delimiter
   }
 }
 </script>

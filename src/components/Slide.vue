@@ -13,8 +13,7 @@
 			</div>
 			    <!-- 如果需要分页器 -->
 			    <div class="swiper-pagination"></div>
-			    <!-- 如果需要滚动条 -->
-			    <div class="swiper-scrollbar"></div>
+					
 		</div>
 </template>
 
@@ -50,5 +49,8 @@ var Swiper=require("../../static/js/swiper-4.1.0.min.js")
 </script>
 
 <style scoped>
-
+.swiper-container img {
+	width:100%;
+	height:100%;
+}
 </style>

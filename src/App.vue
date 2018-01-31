@@ -23,7 +23,16 @@ ul,li{list-style: none;}
 a {text-decoration: none;}
 
 a:link,a:visited {color: #373737;}
-body { font-size: 20px;} 
+body { font-size: 20px;
+  min-width:320px; /* 解决窄屏挤压 */
+  margin-bottom: 200px;
+} 
+
+.clearfix:after {
+  content:'';
+  display:table;
+  clear: both;
+}
 
 /* 全局整个APP样式 */
 #app {

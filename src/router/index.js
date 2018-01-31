@@ -6,6 +6,8 @@ import Amusement from '@/components/Amusement'
 import Explore from '@/components/Explore'
 import Person from '@/components/Person'
 import Recommendation from '@/components/Recommendation'
+import Twoci from '@/components/Twoci'
+import Huwai from '@/components/Huwai'
 import Eat from '@/components/Eat'
 import King from '@/components/King'
 import Lol from '@/components/Lol'
@@ -28,12 +30,11 @@ export default new Router({
       component: Index,
       children:[
         {path:'/Recommendation',name:'Recommendation',component:Recommendation},
-        {path:'/Eat',name:'Recommendation',component:Eat},
-        {path:'/King',name:'Recommendation',component:King},
-        {path:'/Lol',name:'Recommendation',component:Lol},
-        {path:'/Seeklive',name:'Recommendation',component:Seeklive},
-        {path:'/Start',name:'Recommendation',component:Start}
-        
+        {path:'/King',name:'King',component:King},
+        {path:'/Seeklive',name:'Seeklive',component:Seeklive},
+        {path:'/Lol',name:':Lol',component:Lol},
+        {path:'/Start',name:'Start',component:Start},
+        {path:'/Eat',name:'Eat',component:Eat}
       ]
     },
     {
@@ -41,12 +42,12 @@ export default new Router({
       name: 'Amusement',
       component: Amusement,
       children:[
-        {path:'/Recommendation',name:'Recommendation',component:Recommendation},
-        {path:'/Start',name:'Start',component:Start},
-        {path:'/Lol',name:'Recommendation',component:Lol},
-        {path:'/Seeklive',name:'Recommendation',component:Seeklive},
-        {path:'/Start',name:'Recommendation',component:Start},
-        {path:'/Eat',name:'Recommendation',component:Eat}
+        {path:'/Recommendation',redirect:{name:Recommendation}},
+        {path:'/Start',redirect:{name:Start}},
+        {path:'/Twoci',redirect:{name:Twoci}},
+        {path:'/Huwai',redirect:{name:Huwai}},
+        {path:'/Lol',redirect:{name:Lol}},
+        {path:'/Eat',redirect:{name:Eat}}
       ]
     },
     {

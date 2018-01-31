@@ -1,5 +1,5 @@
 <template>
-  <div class="king">
+  <div>
       {{mess}}
   </div>
 </template>
@@ -9,14 +9,12 @@ export default {
     name:'Twoci',
     data () {
         return {
-            mess:'二次元'
+            mess:'星秀'
         }
     }
 }
 </script>
 
 <style>
-.Twoci {
-  
-}
+
 </style>

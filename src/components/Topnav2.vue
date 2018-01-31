@@ -3,14 +3,25 @@
       <ul>
         <li><router-link to="./Recommendation"  class="zp_navTopWord">推荐</router-link></li>
         <li><router-link to="./Start" class="zp_navTopWord" >星秀</router-link></li>
-        <li><router-link to="./Towci" class="zp_navTopWord" >二次元</router-link></li>
-        <li><router-link to="./Huwai" class="zp_navTopWord" >户外</router-link></li>
+        <li><router-link to="./Start" class="zp_navTopWord" >星秀</router-link></li>
+        <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
+        <li><router-link to="./Start" class="zp_navTopWord" >星秀</router-link></li>
+  <!-- bug: 二次元和户外,不能跳转到相应视图,我只能暂时让其跳转到首页 -->
+        <li><router-link to="./" class="zp_navTopWord" >二次元</router-link></li>
+        <li><router-link to="./" class="zp_navTopWord" >户外</router-link></li>
+        <li><router-link to="./Start" class="zp_navTopWord" >星秀</router-link></li>
+        <li><router-link to="./Eat" class="zp_navTopWord" >吃喝玩乐</router-link></li>
+        <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
+        <li><router-link to="./Start" class="zp_navTopWord" >星秀</router-link></li>
+        <li><router-link to="./Start" class="zp_navTopWord" >星秀</router-link></li>
+        <li><router-link to="./Eat" class="zp_navTopWord" >吃喝玩乐</router-link></li>
+        <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
+        <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
         <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
         <li><router-link to="./Eat" class="zp_navTopWord" >吃喝玩乐</router-link></li>
+        <li><router-link to="./Eat" class="zp_navTopWord" >吃喝玩乐</router-link></li>
+        <li><router-link to="./Eat" class="zp_navTopWord" >吃喝玩乐</router-link></li>
       </ul>
-      <div class="topbarbutton">
-        <a href="#"></a>
-      </div>
     </div>
 </template>
 
@@ -29,31 +40,21 @@ export default {
 /* 顶部导航这一块需要适配,以调整关键词间距 */
 .topnav {
   height:60px;
+  text-align:left;
 }
 .topnav ul {
   position:fixed;
   overflow: hidden;
   height:60px;
   line-height:60px;
+  background-color:#fff;
+  width: 100%;
+  z-index: 2;
 }
 .topnav ul li {
   display: inline-block;
   margin:0 10px; /* 1 */
   font-size:14px; /* 1 */
-}
-
-.topbarbutton a {
-    position:fixed;
-    top:0;
-    right:-2px;  /* 因为图没截好,后期需要再调整 */
-    background-color: #fff;
-    z-index:2;
-    width:60px;
-    height:60px;
-    background: url(../assets/img/icon/pic.png) no-repeat;
-    background-size: contain;
-    box-shadow: -2px 0 1px #c8c8c8;
-    border-radius: 3px 0 0 3px;
 }
 
 .zp_navTopWord:hover{

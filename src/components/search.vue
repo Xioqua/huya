@@ -1,6 +1,6 @@
 <template>
 	<div class="search">
-		<input type="text" placeholder="搜索明星大神/热门游戏"/>
+		<input type="text" placeholder="搜索明星大神/热门游戏" class="search_i" />
 	</div>
 </template>
 
@@ -17,9 +17,16 @@ export default {
 
 <style scoped>
 	.search{
-		width:100%;
-		height:85px;
-		padding:0 30px;
-		border-radius: 35px;
+		padding:0 15px;
+		margin:16px;
 	}
+	.search_i{
+		width:100%;
+		height:43px;
+		border-radius: 35px;
+		text-align: center;
+		background:#f3f3f3;
+		border:none;
+	}
+
 </style>
