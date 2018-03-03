@@ -1,5 +1,5 @@
 <template>
-	<div class="swiper-container">
+	<div class="swiper-container" id="swiper-banner">
 			<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<img src="../assets/img/banner01.png" alt="" />
@@ -11,7 +11,6 @@
 			        	<img src="../assets/img/banner03.png" alt="" />
 			        </div>
 			</div>
-			    <!-- 如果需要分页器 -->
 			    <div class="swiper-pagination"></div>
 					
 		</div>
@@ -27,18 +26,15 @@ var Swiper=require("../../static/js/swiper-4.1.0.min.js")
 	    return {
 	      msg: 'Welcome to Your Vue.js App'
 	    }
-  	},
+  	}, 
 		mounted:function(){
-			var mySwiper = new Swiper ('.swiper-container', {
+			var mySwiper = new Swiper ('#swiper-banner', {
 		    direction: 'horizontal',
-		    loop: true,
-		    
-		    // 如果需要分页器
+				loop: true,
+				autoplay:true,
 		    pagination: {
 		      el: '.swiper-pagination',
 		    },
-		    
-		    // 如果需要滚动条
 		    scrollbar: {
 		      el: '.swiper-scrollbar',
 		    }
@@ -52,5 +48,6 @@ var Swiper=require("../../static/js/swiper-4.1.0.min.js")
 .swiper-container img {
 	width:100%;
 	height:100%;
+	display: block;
 }
 </style>

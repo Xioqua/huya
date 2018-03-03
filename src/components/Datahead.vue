@@ -1,51 +1,65 @@
 <template>
-  <div class="datahead clearfix">
+  <div class="datahead">
     <div class="title">
-      <h3><i><img src="@/assets/img/icon/logo09.png" /></i> 全部直播</h3>
+      <h3><i :class="icon"></i> {{title}}</h3>
     </div>
     <div class="breadcrumbNav">
       <a href="#">网游</a> |
       <a href="#">单机</a> |
       <a href="#">娱乐</a> |
-      <a href="#">手游</a> >
+      <a href="#">手游</a> &gt;
     </div>
   </div>
 </template>
 
 <script>
+import iconfont from '../../static/iconfont/iconfont.css'
+
   export default{
     name: 'Datahead',
     data() {
       return {
-        mes: 'dd'
+        mes: '数据表头需要替换,右箭头需要放大'
       }
-    }
+    },
+    props: ['title','icon']
   }
 </script>
 
 <style scoped="scoped">
-  .datahead {
-    width: 95%;
-    margin:10px auto;
-  }
-  .title h3{
-     float:left;
-    
-  }
-  .title h3 i{
-    width:32px;
-    height:32px;
-    display:inline-block;
-    vertical-align: middle;
-  }
-  .title h3 img {
-    width:100%;
-    height:100%;
-  }
-  .breadcrumbNav{
-    float:right;
-  }
-  .breadcrumbNav a,.title h3 {
-     font: normal 16px/32px "宋体";
-  }
+.datahead {
+  height: 43px;
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.datahead > .title {
+  font-size: 16px;
+}
+.datahead > .title > h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.datahead > .breadcrumbNav {
+  font-size: 12px;
+  color: #888;
+}
+.datahead > .breadcrumbNav a {
+  color: #888;
+}
+.iconfont {
+  font-size: 24px;
+}
+.icon-hot {
+  color: red;
+}
+.icon-diamond {
+  color: aqua;
+}
+.icon-service {
+  color:brown;
+}
 </style>

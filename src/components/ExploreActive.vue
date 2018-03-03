@@ -5,7 +5,6 @@
       <li><router-link to="./" class="">新闻资讯</router-link></li>
       <li><router-link to="./" class="">找应用</router-link></li>
       <li><router-link to="./" class="">玩游戏</router-link></li>
-      <li><router-link to="./" class="">找女神</router-link></li>
     </ul>
   </div>
 </template>
@@ -38,5 +37,4 @@ export default {
   background-size: contain;
   font-size: 16px;
 }
-
 </style>

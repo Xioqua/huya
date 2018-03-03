@@ -24,7 +24,7 @@ export default {
     }
   },
   created() {
-     axios.get('../static/json/all.json').then(res=>this.mess=res.data)
+     axios.get('./static/json/all.json').then(res=>this.mess=res.data)
       .catch(() => console.log("抓取失败"))
   }
 }
@@ -50,10 +50,10 @@ export default {
     padding-left:.5em;
   }
   .datamedialist li h6 {
-    font: normal 1em "宋体";
+    font: normal 12px "宋体";
   }
   .datamedialist .author,.datamedialist .tag {
-    font: normal .6em "宋体";
+    font: normal 16px "宋体";
     color: #666;
     padding: 10px 0;
   }

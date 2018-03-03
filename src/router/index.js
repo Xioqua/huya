@@ -1,18 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Tabbar from '@/components/Tabbar'
-import Index from '@/components/Index'
-import Amusement from '@/components/Amusement'
-import Explore from '@/components/Explore'
-import Person from '@/components/Person'
-import Recommendation from '@/components/Recommendation'
-import Twoci from '@/components/Twoci'
-import Huwai from '@/components/Huwai'
-import Eat from '@/components/Eat'
-import King from '@/components/King'
-import Lol from '@/components/Lol'
-import Seeklive from '@/components/Seeklive'
-import Start from '@/components/Start'
+import SearchResult from '@/components/SearchResult'
+
+import Index from '@/views/Index'
+import Amusement from '@/views/Amusement'
+import Explore from '@/views/Explore'
+import Person from '@/views/Person'
+
+import RecommendationIndex from '@/views/pages/RecommendationIndex'
+import RecommendationAmuse from '@/views/pages/RecommendationAmuse'
+import ErCiYuan from '@/views/pages/ErCiYuan'
+import XingXiu from '@/views/pages/XingXiu'
+import ChiHeWanLe from '@/views/pages/ChiHeWanLe'
+import HuWai from '@/views/pages/HuWai'
+import WangZheRongYao from '@/views/pages/WangZheRongYao'
+import JueDiQiuSheng from '@/views/pages/JueDiQiuSheng'
+import Lol from '@/views/pages/Lol'
+
+import LiveRoom from '@/views/pages/LiveRoom'
+import Chat from '@/components/liveroom/Chat'
+import Zhubo from '@/components/liveroom/Zhubo'
+import Paihang from '@/components/liveroom/Paihang'
+import GuiBin from '@/components/liveroom/GuiBin'
 
 Vue.use(Router)
 
@@ -21,44 +31,62 @@ export default new Router({
     {
       path: '/',
       redirect: {
-        name: 'Index'
+        name: 'RecommendationIndex'
       }
     },
     {
-      path: '/index',
+      path: '/Index',
       name: 'Index',
       component: Index,
+      redirect: '/RecommendationIndex',
       children:[
-        {path:'/Recommendation',name:'Recommendation',component:Recommendation},
-        {path:'/King',name:'King',component:King},
-        {path:'/Seeklive',name:'Seeklive',component:Seeklive},
+        {path:'/RecommendationIndex',name:'RecommendationIndex',component:RecommendationIndex},
+        {path:'/WangZheRongYao',name:'WangZheRongYao',component:WangZheRongYao},
         {path:'/Lol',name:':Lol',component:Lol},
-        {path:'/Start',name:'Start',component:Start},
-        {path:'/Eat',name:'Eat',component:Eat}
+        {path:'/JueDiQiuSheng',name:'JueDiQiuSheng',component:JueDiQiuSheng},
+        {path:'/XingXiu',name:'XingXiu',component:XingXiu},
+        {path:'/ChiHeWanLe',name:'ChiHeWanLe',component:ChiHeWanLe}
       ]
     },
     {
-      path: '/amusement',
+      path: '/Amusement',
       name: 'Amusement',
       component: Amusement,
       children:[
-        {path:'/Recommendation',redirect:{name:Recommendation}},
-        {path:'/Start',redirect:{name:Start}},
-        {path:'/Twoci',redirect:{name:Twoci}},
-        {path:'/Huwai',redirect:{name:Huwai}},
+        {path:'/RecommendationAmuse',redirect:{name:RecommendationAmuse}},
+        {path:'/XingXiu',redirect:{name:XingXiu}},
+        {path:'/ErCiYuan',redirect:{name:ErCiYuan}},
+        {path:'/HuWai',redirect:{name:HuWai}},
         {path:'/Lol',redirect:{name:Lol}},
-        {path:'/Eat',redirect:{name:Eat}}
+        {path:'/ChiHeWanLe',redirect:{name:ChiHeWanLe}}
       ]
     },
     {
-      path: '/explore',
+      path: '/Explore',
       name: 'Explore',
       component: Explore
     },
     {
-      path: '/person',
+      path: '/Person',
       name: 'Person',
       component: Person
+    },
+    {
+      path: '/search',
+      name: 'SearchResult',
+      component: SearchResult
+    },
+    {
+      path:'/liveroom',
+      name:'LiveRoom',
+      component: LiveRoom,
+      redirect: '/zhubo',
+      children: [
+        {path:'/chat',name:'chat',component:Chat},
+        {path:'/zhubo',name:'zhubo',component:Zhubo},
+        {path:'/paihang',name:'paihang',component:Paihang},
+        {path:'/guibin',name:'guibin',component:GuiBin}
+      ]
     }
   ]
 })

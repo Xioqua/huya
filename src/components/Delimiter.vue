@@ -17,8 +17,8 @@ export default {
 
 <style scoped>
 .delimeter {
-  height: 16px;
+  height: 10px;
   background-color: #eee;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 </style>

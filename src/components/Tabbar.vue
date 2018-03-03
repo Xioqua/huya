@@ -26,10 +26,10 @@ export default {
       var arr = ['home','fav','search','person']
       for (let i = 0; i < ali.length; i++) {
         aa[i].style.color = "rgba(0,0,0,.6)";
-        aa[i].style.backgroundImage = "url(../../static/tabbar/"+ arr[i] + "_gray.png)"
+        aa[i].style.backgroundImage = "url(./static/tabbar/"+ arr[i] + "_gray.png)"
       }
       aa[i].style.color = "rgb(252,153,0)";
-      aa[i].style.backgroundImage = "url(../../static/tabbar/" + arr[i] + "_light.png)"
+      aa[i].style.backgroundImage = "url(./static/tabbar/" + arr[i] + "_light.png)"
     }
   }
 }
@@ -42,20 +42,23 @@ export default {
     width: 100%;
     background-color: #fff;
     border-top:1px solid #ccc;
-    font-size:12px; /*1*/
+    font-size:10px;
     z-index:99;
   }
   .footer ul {
     display:flex;
+    height: 50px;
+    padding-top: 7px;
   }
   .footer ul>li {
     flex: 1;
-    padding: 8px 0;
   }
   .footer ul a {
     display: inline-block;
-    height: 66px;
-    padding-top: 36px;
+    padding-top: 27px;
+    /*
+    bug: 1. 点击区域过小 2. 2次点击同一个标签会出现蓝色区域
+     */
   }
   .footer ul li:nth-of-type(1) a{
     background:url(../../static/tabbar/home_light.png) no-repeat;
@@ -73,10 +76,6 @@ export default {
     background:url(../../static/tabbar/person_gray.png) no-repeat;
     background-size: contain;
   }
-  /* 背景图切换 */
-  /* 之前的图片路径被解析为base64了不好切换背景图。 资源放在src下都会被webpack打包处理 */
-/* 这块的做法与图片命名太过耦合 */
-
   .active {
     color: rgb(252,153,0);
   }
