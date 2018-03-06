@@ -1,13 +1,10 @@
 <template>
   <div class="index">
-    <Topnav></Topnav>
-    <IconMenu></IconMenu>
 <div class="swiper-container" id="swiper-index">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <Searchbar></Searchbar>
-          <Slide></Slide>
-          <router-view></router-view>
+          <Main></Main>
+          <router-view></router-view>          
         </div>
     </div>
 </div>
@@ -16,10 +13,7 @@
 </template>
 
 <script>
-import Topnav from '../components/Topnav'
-import IconMenu from '../components/IconMenu'
-import Searchbar from '../components/Searchbar'
-import Slide from '../components/Slide'
+import Main from '../components/Main'
 import Tabbar from '../components/Tabbar'
 require("../../static/css/swiper-4.1.0.min.css")
 var Swiper=require("../../static/js/swiper-4.1.0.min.js")
@@ -32,10 +26,7 @@ export default {
     }
   },
   components: {
-    Topnav,
-    IconMenu,
-    Searchbar,
-    Slide,
+    Main,
     Tabbar
   },
   	mounted:function(){

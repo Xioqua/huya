@@ -4,9 +4,9 @@
         <li><router-link to="./"  class="zp_navTopWord">推荐</router-link></li>
         <li><router-link to="./" class="zp_navTopWord" >二次元</router-link></li>
         <li><router-link to="./" class="zp_navTopWord" >户外</router-link></li>
-        <li><router-link to="./XingXiu" class="zp_navTopWord" >星秀</router-link></li>
-        <li><router-link to="./Lol" class="zp_navTopWord" >LOL</router-link></li>
-        <li><router-link to="./ChiHeWanLe" class="zp_navTopWord" >吃喝玩乐</router-link></li>
+        <li><router-link to="./" class="zp_navTopWord" >星秀</router-link></li>
+        <li><router-link to="./" class="zp_navTopWord" >LOL</router-link></li>
+        <li><router-link to="./" class="zp_navTopWord" >吃喝玩乐</router-link></li>
       </ul>
     </div>
 </template>

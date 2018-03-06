@@ -2,10 +2,10 @@
   <div class="tabbar">
     <footer class="footer">
       <ul>
-        <li @click="fn(0)"><router-link to='/index' class="active">首页</router-link></li>
-        <li @click="fn(1)"><router-link to='/amusement' class="">娱乐</router-link></li>
-        <li @click="fn(2)"><router-link to='/explore' class="">发现</router-link></li>
-        <li @click="fn(3)"><router-link to='/person' class="">我的</router-link></li>
+        <li><router-link to='/index' class="active" @click="fn(0)">首页</router-link></li>
+        <li><router-link to='/amusement' @click="fn(1)">娱乐</router-link></li>
+        <li><router-link to='/explore' @click="fn(2)">发现</router-link></li>
+        <li><router-link to='/person' @click="fn(3)">我的</router-link></li>
       </ul>
     </footer>
   </div>

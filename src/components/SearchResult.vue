@@ -30,7 +30,7 @@ export default {
   },
   mounted() {
     this.$refs.input.focus()
-  }
+  } 
 }
 </script>
 
@@ -39,14 +39,14 @@ export default {
 .SearchResult {
   display: flex;
   width: 98%;
-  margin: 0 auto;
+  margin: .1em auto;
   align-items: center;
 }
 .SearchResult > input {
   flex: 9;
   display: block;
   width: 90%;
-  padding: .75em 0 .75em 1.5em;
+  padding: .75em 0 .75em 1.8em;
   color: #666;
   background-color: #f4f4f4;
   text-decoration: none;
@@ -66,7 +66,7 @@ export default {
 .icon-search {
   font-size:14px;
   position: absolute;
-  margin-left: .2em;
+  margin-left: .3em;
 }
 .icon-quxiao {
   position: absolute;

@@ -22,7 +22,7 @@ export default {
 .searchbar > a {
   display: block;
   width: 98%;
-  margin: 1em auto;
+  margin: .5em auto;
   padding: .75em 0;
   color: #666;
   background-color:#f4f4f4;

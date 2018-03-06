@@ -24,69 +24,39 @@ import Zhubo from '@/components/liveroom/Zhubo'
 import Paihang from '@/components/liveroom/Paihang'
 import GuiBin from '@/components/liveroom/GuiBin'
 
+import Setting from '@/components/Setting'
+import Main from '@/components/Main'
+
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      redirect: {
-        name: 'RecommendationIndex'
-      }
-    },
-    {
-      path: '/Index',
-      name: 'Index',
-      component: Index,
-      redirect: '/RecommendationIndex',
-      children:[
-        {path:'/RecommendationIndex',name:'RecommendationIndex',component:RecommendationIndex},
-        {path:'/WangZheRongYao',name:'WangZheRongYao',component:WangZheRongYao},
-        {path:'/Lol',name:':Lol',component:Lol},
-        {path:'/JueDiQiuSheng',name:'JueDiQiuSheng',component:JueDiQiuSheng},
-        {path:'/XingXiu',name:'XingXiu',component:XingXiu},
-        {path:'/ChiHeWanLe',name:'ChiHeWanLe',component:ChiHeWanLe}
-      ]
-    },
-    {
-      path: '/Amusement',
-      name: 'Amusement',
-      component: Amusement,
-      children:[
-        {path:'/RecommendationAmuse',redirect:{name:RecommendationAmuse}},
-        {path:'/XingXiu',redirect:{name:XingXiu}},
-        {path:'/ErCiYuan',redirect:{name:ErCiYuan}},
-        {path:'/HuWai',redirect:{name:HuWai}},
-        {path:'/Lol',redirect:{name:Lol}},
-        {path:'/ChiHeWanLe',redirect:{name:ChiHeWanLe}}
-      ]
-    },
-    {
-      path: '/Explore',
-      name: 'Explore',
-      component: Explore
-    },
-    {
-      path: '/Person',
-      name: 'Person',
-      component: Person
-    },
-    {
-      path: '/search',
-      name: 'SearchResult',
-      component: SearchResult
-    },
-    {
+  routes: [{
+      path:'/',
+      component:Index
+    },{
+      path:'/index',
+      redirect:{path:'/RecommendationIndex'}
+    },{
+      path:'/amusement',
+      component:Amusement
+    },{
+      path:'/explore',
+      component:Explore
+    },{
+      path:'/person',
+      component:Person
+    },{
+      path:'/RecommendationIndex',
+     redirect:{path:'/'}
+    },{
+      path:'/setting',
+      component:Setting
+    },{
+      path:'/search',
+      component:SearchResult
+    },{
       path:'/liveroom',
-      name:'LiveRoom',
-      component: LiveRoom,
-      redirect: '/zhubo',
-      children: [
-        {path:'/chat',name:'chat',component:Chat},
-        {path:'/zhubo',name:'zhubo',component:Zhubo},
-        {path:'/paihang',name:'paihang',component:Paihang},
-        {path:'/guibin',name:'guibin',component:GuiBin}
-      ]
+      component:LiveRoom
     }
   ]
 })
