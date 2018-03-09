@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "animate.css": "^3.6.1",
     "dplayer": "^1.22.2",
     "vue": "^2.5.2",
     "vue-dplayer": "0.0.9",

@@ -5,18 +5,13 @@
 </template>
 
 <script>
-import Tabbar from './components/Tabbar'
 
 export default {
-  name: 'App',
-  components: {
-    Tabbar
-  }
+  name: 'App'
 }
 </script>
 
 <style>
-/* 全局重置样式 */
 * {margin: 0;padding: 0;box-sizing:border-box;}
 ul,li{list-style: none;}
 a {text-decoration: none;}

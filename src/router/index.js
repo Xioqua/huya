@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Tabbar from '@/components/Tabbar'
 import SearchResult from '@/components/SearchResult'
 
-import Index from '@/views/Index'
-import Amusement from '@/views/Amusement'
-import Explore from '@/views/Explore'
-import Person from '@/views/Person'
+import Tabbar from '@/components/tabbar/tabbar'
+import home from '@/views/home'
+import ent from '@/views/ent'
+import subc from '@/views/subc'
+import expl from '@/views/expl'
+import mine from '@/views/mine'
 
 import RecommendationIndex from '@/views/pages/RecommendationIndex'
 import RecommendationAmuse from '@/views/pages/RecommendationAmuse'
@@ -32,30 +33,39 @@ Vue.use(Router)
 export default new Router({
   routes: [{
       path:'/',
-      component:Index
+      name: 'home',
+      component:home
     },{
-      path:'/index',
-      redirect:{path:'/RecommendationIndex'}
+      path:'/home',
+      redirect:'/'
     },{
-      path:'/amusement',
-      component:Amusement
+      path:'/ent',
+      name:'ent',
+      component:ent
     },{
-      path:'/explore',
-      component:Explore
+      path:'/subc',
+      name:'subc',
+      component: subc
+    },
+    {
+      path:'/expl',
+      name:'expl',
+      component:expl
     },{
-      path:'/person',
-      component:Person
-    },{
-      path:'/RecommendationIndex',
-     redirect:{path:'/'}
+      path:'/mine',
+      name:'mine',
+      component:mine
     },{
       path:'/setting',
+      name:'setting',
       component:Setting
     },{
       path:'/search',
+      name:'search',
       component:SearchResult
     },{
       path:'/liveroom',
+      name:'liveroom',
       component:LiveRoom
     }
   ]
