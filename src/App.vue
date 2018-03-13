@@ -20,7 +20,8 @@ a:link,a:visited {color: #373737;}
 body { 
   font-size: 20px;
   min-width:320px; /* 解决窄屏挤压 */
-  margin-bottom: 200px;
+  margin-bottom: 3em;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 .clearfix:after {
@@ -28,6 +29,7 @@ body {
   display:table;
   clear: both;
 }
+
 
 /* 全局整个APP样式 */
 #app {

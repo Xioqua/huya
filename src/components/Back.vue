@@ -12,7 +12,7 @@ export default {
   methods: {
     returnPrev() {
       // 路由到底跳转到哪由需求定,暂且让所有LiveRoom页面回到首页
-      this.$router.push('index')
+      this.$router.push('/')
     }
   }
 }

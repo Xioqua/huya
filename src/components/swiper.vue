@@ -16,7 +16,6 @@
 import Swiper from '../../static/js/swiper-4.1.0.min.js'
 import '../../static/css/swiper-4.1.0.min.css'
 import RecommendationIndex from '@/views/pages/RecommendationIndex'
-import WangZheRongYao from '@/views/pages/WangZheRongYao'
 import JueDiQiuSheng from '@/views/pages/JueDiQiuSheng'
 import Lol from '@/views/pages/Lol'
 import ErCiYuan from '@/views/pages/ErCiYuan'
@@ -24,12 +23,11 @@ import XingXiu from '@/views/pages/XingXiu'
 import ChiHeWanLe from '@/views/pages/ChiHeWanLe'
 import HuWai from '@/views/pages/HuWai'
 export default {
-  components: {RecommendationIndex,WangZheRongYao,JueDiQiuSheng,Lol,ErCiYuan,XingXiu,ChiHeWanLe},
+  components: {RecommendationIndex,JueDiQiuSheng,Lol,ErCiYuan,XingXiu,ChiHeWanLe},
   data() {
     return {
       list: [
         {path:'/RecommendationIndex',component:RecommendationIndex},
-        {path:'/WangZheRongYao',component:WangZheRongYao},
         {path:'/JueDiQiuSheng',component:JueDiQiuSheng},
         {path:'/Lol',component:Lol},
         {path:'/ErCiYuan',component:ErCiYuan},
@@ -37,13 +35,13 @@ export default {
         {path:'/ChiHeWanLe',component:ChiHeWanLe},
         {path:'/HuWai',component:HuWai}
       ],
-      arr: ['/RecommendationIndex','/WangZheRongYao','/JueDiQiuSheng','/Lol','/ErCiYuan','/XingXiu','/ChiHeWanLe','/HuWai']
+      arr: ['/RecommendationIndex','/JueDiQiuSheng','/Lol','/ErCiYuan','/XingXiu','/ChiHeWanLe','/HuWai']
     }
   },
   mounted() {
     var that = this
     var mySwiper = new Swiper('.content',{
-      threshold: 250,
+      threshold: 100,
        on: {
         touchEnd() {
           var TR = this.translate

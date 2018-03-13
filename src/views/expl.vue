@@ -1,13 +1,15 @@
 <template>
   <div class="explore">
-    发现
+    <div class="header">发现</div>
+    <div class="body">
     <ExploreActive></ExploreActive>
     <Delimiter></Delimiter>
-    <Datahead></Datahead>
-    <Datalist></Datalist>
+    <Datahead to="/mine" title="神镜头" :icon="iconTitle.yxlm" breadTitle="王者荣耀、搞笑、更多精彩" :showRightBtn="true"/>
+    <DataList json="chwl" :limit="2"></DataList>
     <Delimiter></Delimiter>
-    <Datahead></Datahead>
+    <Datahead to="/mine" title="兴趣推荐" :icon="iconTitle.yxlm" breadTitle="" :showRightBtn="false"/>
     <DataMedialist></DataMedialist>
+    </div>
     <tabbar></tabbar>
   </div>
 </template>
@@ -15,9 +17,9 @@
 <script>
 import ExploreActive from '../components/ExploreActive'
 import Delimiter from '../components/Delimiter'
-import Datahead from '../components/Datahead'
-import Datalist from '../components/DataList'
-import DataMedialist from '../components/DataMedialist'
+import Datahead from '@/components/data/Datahead'
+import DataList from '@/components/data/DataList'
+import DataMedialist from '@/components/data/DataMedialist'
 import Tabbar from '@/components/tabbar/tabbar'
 
 export default {
@@ -26,13 +28,41 @@ export default {
     ExploreActive,
     Delimiter,
     Datahead,
-    Datalist,
+    DataList,
     DataMedialist,
     Tabbar
-  }
+  },
+  data() {
+      return {
+          iconTitle:  {
+              wzry: require('@/assets/icon/data/wzry.png'),
+              phone: require('@/assets/icon/data/phone.png'),
+              meiyan: require('@/assets/icon/data/meiyan.png'),
+              lrs: require('@/assets/icon/data/lrs.png'),
+              yxlm: require('@/assets/icon/data/yxlm.png'),
+              zjyx: require('@/assets/icon/data/zjyx.png')
+          },
+          bannerImgs: [
+              '//livewebbs2.msstatic.com/home_recommend_live_app_1518253430.jpg?ips_thumbnail/0/w/700/',
+              '//livewebbs2.msstatic.com/home_recommend_live_app_1490355094.jpg?ips_thumbnail/0/w/700/',
+              '//livewebbs2.msstatic.com/home_recommend_live_app_1514204772.jpg?ips_thumbnail/0/w/700/'
+          ]
+      }
+  },
 }
 </script>
 
 <style scoped>
-
+.explore .header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 2.2em;
+  line-height: 2.2em;
+  text-align: center;
+  background-color: #fff;
+}
+.explore .body {
+  margin-top: 2.2em;
+}
 </style>

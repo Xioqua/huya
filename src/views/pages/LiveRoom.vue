@@ -25,7 +25,7 @@ export default {
       msg: 'Welcome to Your Vue.js App',
       video: {
           url: 'https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/chunklist_w630020335.m3u8',
-          pic: '//huyaimg.msstatic.com/cdnimage/anchorpost/1066/8a/2471e5719c93add739f1e5ef468b1a_2633_1510367350.jpg?imageview/4/0/w/870/h/448/blur/1',
+          pic: 'static/live/cover1.jpg',
           type: 'hls'
         },
         autoplay: false,

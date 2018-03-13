@@ -1,40 +1,45 @@
 <template>
-  <div class="explore-active">
-    <ul>
-      <li><router-link to="./"  class="">活动中心</router-link></li>
-      <li><router-link to="./" class="">新闻资讯</router-link></li>
-      <li><router-link to="./" class="">找应用</router-link></li>
-      <li><router-link to="./" class="">玩游戏</router-link></li>
-    </ul>
-  </div>
+   <div class="activeExpl">
+        <m-tabbar-item>
+        <img src="@/assets/icon/expl/hdzx.png" slot="icon-active">
+        活动中心
+        </m-tabbar-item>
+      <m-tabbar-item>
+        <img src="@/assets/icon/expl/xxzx.png" slot="icon-active">
+        新闻资讯
+      </m-tabbar-item>
+      <m-tabbar-item>
+        <img src="@/assets/icon/expl/zyy.png" slot="icon-active">
+        找应用
+      </m-tabbar-item>
+       <m-tabbar-item>
+        <img src="@/assets/icon/expl/wyx.png" slot="icon-active">
+        玩游戏
+      </m-tabbar-item>
+    </div>
 </template>
 
 <script>
+import mTabbar from '@/components/tabbar/TabbarContainer'
+import mTabbarItem from '@/components/tabbar/TabbarItem'
+
 export default {
-  name: 'ExploreActive',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+    components:{
+      mTabbar,
+      mTabbarItem
     }
-  }
 }
 </script>
 
 <style scoped>
-.explore-active ul {
-  margin-top:20px;
+.activeExpl {
   display: flex;
 }
-.explore-active ul>li {
-  flex:1;
+.activeExpl .m-tabbar-item .m-tabbar-item-icon img {
+  width: 45px;
+  height: 45px;
 }
-.explore-active a {
-  display: inline-block;
-  height: 66px;
-  width: 66px;
-  padding-top: 70px;
-  background: url(../../static/tabbar/fav_light.png) no-repeat;
-  background-size: contain;
-  font-size: 16px;
+.activeExpl  span.m-tabbar-item-text {
+  color: #888 !important;
 }
 </style>

@@ -6,12 +6,7 @@
 
 <script>
 export default {
-  name: 'Delimiter',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'Delimiter'
 }
 </script>
 

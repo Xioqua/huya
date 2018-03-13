@@ -1,15 +1,20 @@
 <template>
  <div class="nav swiper-container" ref="nav">
+  
    <div class="swiper-wrapper">
-     <div class="item swiper-slide" 
+     
+     <span class="item swiper-slide" 
           v-for="(item,index) in navList"
           :class="{'active': nowIndex===index}"
           @click="tabClick(index)"
       >
        {{item.name}}
-     </div>
+     </span>
+
    </div>
-  <setting-btn></setting-btn>
+
+  <setting-btn v-show="showBtn"></setting-btn>
+
  </div>
 </template>
 
@@ -27,19 +32,19 @@ export default {
     return {
       navList: [
         {name:'推荐'},
-        {name:'王者荣耀'},
-        {name:'绝地求生'},
-        {name:'LOL'},
-        {name:'二次元'},
-        {name:'星秀'},
         {name:'吃喝玩乐'},
-        {name:'户外'}
+        {name:'户外'},
+        {name:'绝地求生'},
+        {name:'星秀'},
+        {name:'二次元'},
+        {name:'Lol'}
       ],
       nowIndex: 0,
-      arr: ['/RecommendationIndex','/WangZheRongYao','/JueDiQiuSheng','/Lol','/ErCiYuan','/XingXiu','/ChiHeWanLe','/HuWai'],
-      slidesPerView: 3
+      arr: ['/RecommendationIndex','/JueDiQiuSheng','/Lol','/ErCiYuan','/XingXiu','/ChiHeWanLe','/HuWai'],
+      slidesPerView: 5
     }
   },
+  props:['showBtn'],
   mounted() {
     var that = this
     this.$root.eventHub.$on('slideTab',this.slideTab)
@@ -97,11 +102,11 @@ export default {
 </script>
 
 <style scoped>
-.item {font-size:.8em;padding: .5em;box-sizing: border-box;}
+.item {font-family: '宋体';font-size:1rem;padding: .5em;box-sizing: border-box;word-break: keep-all;padding: .6em;}
 .item.active {
   color: #cd6115;
 }
 .item:last-child {
-  padding-right: 3.3em;
+  padding-right: 10em;
 }
 </style>

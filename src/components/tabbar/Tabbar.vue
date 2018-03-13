@@ -10,11 +10,6 @@
         <img src="@/assets/icon/tabbar/star_l.png" slot="icon-active">
         娱乐
       </m-tabbar-item>
-      <m-tabbar-item id='subc' isRouter>
-        <img src="@/assets/icon/tabbar/smile.png" slot="icon-normal"> 
-        <img src="@/assets/icon/tabbar/smile_l.png" slot="icon-active"> 
-        订阅
-      </m-tabbar-item>
       <m-tabbar-item id='expl' isRouter>
         <img src="@/assets/icon/tabbar/planet.png" slot="icon-normal">
         <img src="@/assets/icon/tabbar/planet_l.png" slot="icon-active">
