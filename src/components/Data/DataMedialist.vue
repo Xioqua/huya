@@ -47,7 +47,7 @@ export default {
   .datamedialist li > div {
     flex: 1;
     text-align:left;
-    padding:.8em;
+    padding:.8em 0 0 .8em;
   }
   .datamedialist li h6 {
     font: normal 1rem "宋体";

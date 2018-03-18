@@ -15,8 +15,8 @@ export default {
 <style scoped>
 .iconfont {
   display: inline-block;
-  font-size: 37px;
-  height: 37px;
+  font-size: 1.5rem;
+  height: 1rem;
 }
 
 .setting-btn {

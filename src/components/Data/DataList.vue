@@ -43,6 +43,7 @@ export default {
 .datalist p {
   text-align: left;
   font-size: .875rem;
+  margin: .1em 0;
   overflow: hidden;
 text-overflow:ellipsis;
 white-space: nowrap;

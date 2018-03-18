@@ -41,7 +41,7 @@ export default {
   mounted() {
     var that = this
     var mySwiper = new Swiper('.content',{
-      threshold: 250,
+      threshold: 80,
        on: {
         touchEnd() {
           var TR = this.translate

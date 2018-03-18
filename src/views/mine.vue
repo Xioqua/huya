@@ -82,19 +82,17 @@ export default {
   height: 30px;
   vertical-align: middle;
 }
-.header > span {
-  font-weight: 500;
-}
 .login {
   display: flex;
-  width: 95%;
+  width: 93.5%;
   margin: 0 auto;
   justify-content: space-between;
 }
 .login > img{
-  width: 24px;
-  height: 24px;
-  margin-top: 10px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: 1rem;
 }
 .login_l {
   display: flex;
@@ -117,20 +115,21 @@ export default {
   margin-top: .5em;
   color: #fff;
 }
-.login_f > * {
-  margin: .8em 0 !important;
+.login_f {
+  width: 95%;
+  margin: .6em auto;
 }
 
 .mine_list {
-  width: 90%;
-  margin: 10px auto;
-  text-align: left;
+  overflow: hidden;
+  margin-top: -2em;
 }
+
 .mine_list > div {
-  display: inline-block;
-  width:22%;
-  margin: 2px;
+  float: left;
+  width:25%;
   text-align: center;
+  margin-top: 2.4em;
 }
 .mine_list > div > div {
   display: flex;
@@ -138,12 +137,18 @@ export default {
 }
 .mine_list img {
   display: block;
-  height: 30px;
+  height: 24px;
 }
 .mine span{
   display: block;
-  margin-top: .5em;
+  margin-top: 1em;
   color: #666;
-  font-size: 14px;
+  font-size: 12px;
 }
+.header > span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 10px;
+}
+
 </style>

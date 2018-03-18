@@ -7,7 +7,7 @@
     <Datahead to="/mine" title="神镜头" :icon="iconTitle.yxlm" breadTitle="王者荣耀、搞笑、更多精彩" :showRightBtn="true"/>
     <DataList json="chwl" :limit="2"></DataList>
     <Delimiter></Delimiter>
-    <Datahead to="/mine" title="兴趣推荐" :icon="iconTitle.yxlm" breadTitle="" :showRightBtn="false"/>
+    <Datahead to="/mine" title="兴趣推荐" :icon="iconTitle.zjyx" breadTitle="" :showRightBtn="false"/>
     <DataMedialist></DataMedialist>
     </div>
     <tabbar></tabbar>
@@ -61,6 +61,7 @@ export default {
   line-height: 2.2em;
   text-align: center;
   background-color: #fff;
+  z-index: 2;
 }
 .explore .body {
   margin-top: 2.2em;

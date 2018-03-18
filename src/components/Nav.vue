@@ -102,7 +102,12 @@ export default {
 </script>
 
 <style scoped>
-.item {font-family: '宋体';font-size:1rem;padding: .5em;box-sizing: border-box;word-break: keep-all;padding: .6em;}
+/* 头部fixed失效 */
+.nav {
+  position: absolute;
+  top: 0;
+}
+.item {font-family: '宋体';font-size:.8rem;padding: .5em;box-sizing: border-box;word-break: keep-all;padding: .6em;}
 .item.active {
   color: #cd6115;
 }

@@ -30,14 +30,23 @@ body {
   clear: both;
 }
 
+/* 禁用移动端滚动条 bug*/
+html,body {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
 
-/* 全局整个APP样式 */
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  overflow-x: hidden; /* 横向滚动禁止 */
+  overflow-x: hidden;
 }
 </style>
