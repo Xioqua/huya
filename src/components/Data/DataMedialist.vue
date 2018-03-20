@@ -1,8 +1,8 @@
 <template>
   <div class="datamedialist">
     <ul>
-      <li v-for="mes in mess">
-        <img src="@/assets/icon/data/cover.png">
+      <li v-for="(mes,index) in mess" v-if="index < limit">
+        <img :src="mes.videoCover" alt="mes.name" />
         <div>
           <h6 v-text="mes.name"></h6>
           <div class="author">小站</div>
@@ -23,6 +23,7 @@ export default {
      mess:null
     }
   },
+  props: ['json','limit'],
   created() {
      axios.get('./static/json/all.json').then(res=>this.mess=res.data)
       .catch(() => console.log("抓取失败"))

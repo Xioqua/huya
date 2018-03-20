@@ -2,7 +2,7 @@
 	<div class="swiper-container swiper-banner">
 			<div class="swiper-wrapper">
 			        <div class="swiper-slide" v-for="m in bannerImgs">
-			        	<img :src="m.url" alt="" />
+			        	<img :src="m.url" class="swiper-lazy"/>
 			        </div>
 			</div>
 			    <div class="swiper-pagination"></div>
@@ -18,7 +18,7 @@ var Swiper=require("../../static/js/swiper-4.1.0.min.js")
 		data() {
 			return {
 			  bannerImgs: [
-					{url: 'static/banner/1.jpg' },
+					{url: 'static/banner/1.jpg'},
 					{url: 'static/banner/2.jpg'},
 					{url: 'static/banner/3.jpg'},
 					{url: 'static/banner/4.jpg'},
@@ -36,13 +36,17 @@ var Swiper=require("../../static/js/swiper-4.1.0.min.js")
 		    },
 		    scrollbar: {
 		      el: '.swiper-scrollbar',
-		    }
+				},
+				watchSlidesVisibility: true
 		  }) 
 		}
 	}
 </script>
 
 <style scoped>
+.swiper-container {
+	width: 100%;
+}
 .swiper-container img {
 	width:100%;
 	height:100%;

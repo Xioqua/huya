@@ -1,7 +1,7 @@
 <template>
   <div>
    <div class="datatab">
-     <span v-for="m in tabs" @click="gotoTab">
+     <span v-for="(m,i) in tabs" @click="gotoTab(i)">
        {{m}}
      </span>
    </div>
@@ -23,8 +23,15 @@ export default {
   },
   props:['tabs'],
   methods: {
-    gotoTab() {
-      
+    gotoTab(i) {
+      var datatabitem = this.$el.querySelectorAll('.datatab > span')
+      Array.from(datatabitem).forEach(function(e){
+        e.style.color="#333"
+        e.style.backgroundColor="#fff"
+      })
+      datatabitem[i].style.backgroundColor = '#df6e1d'
+      datatabitem[i].style.color = '#fff'
+      datatabitem[i].style. borderRadius = '.8em'
     }
   }
 }

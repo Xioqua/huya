@@ -16,7 +16,7 @@ export default {
 .iconfont {
   display: inline-block;
   font-size: 1.5rem;
-  height: 1rem;
+  padding: .5rem;
 }
 
 .setting-btn {
@@ -25,6 +25,9 @@ export default {
   top: 0;
   z-index: 99;
   background-color: #fff;
+}
+.setting-btn a {
+  display: block;
 }
 .icon-in {
   border-radius: .3em 0 0 .3em;

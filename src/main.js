@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueLazyLoad from 'vue-lazyload'
+
+Vue.use(VueLazyLoad,{
+  error:'./static/error.png',
+  loading:'./static/dataimg/3.jpg'
+})
 
 Vue.config.productionTip = false
 

@@ -14,6 +14,11 @@ import LiveRoom from '@/views/pages/LiveRoom'
 
 import Setting from '@/components/Setting'
 
+import Chat from '@/components/liveroom/Chat'
+import Zhubo from '@/components/liveroom/Zhubo'
+import Paihang from '@/components/liveroom/Paihang'
+import Guibin from '@/components/liveroom/Guibin'
+
 Vue.use(Router)
 
 export default new Router({
@@ -47,7 +52,13 @@ export default new Router({
     },{
       path:'/liveroom',
       name:'liveroom',
-      component:LiveRoom
+      component:LiveRoom,
+      children:[
+        {path:'/chat',name:'chat',component:Chat},
+        {path:'/zhubo',name:'zhubo',component:Zhubo},
+        {path:'/paihang',name:'paihang',component:Paihang},
+        {path:'/guibin',name:'guibin',component:Guibin},
+      ]
     },{
       path: '/RecommendationIndex',
       redirect:'/'

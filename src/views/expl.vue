@@ -8,7 +8,7 @@
     <DataList json="chwl" :limit="2"></DataList>
     <Delimiter></Delimiter>
     <Datahead to="/mine" title="兴趣推荐" :icon="iconTitle.zjyx" breadTitle="" :showRightBtn="false"/>
-    <DataMedialist></DataMedialist>
+    <DataMedialist json="all" :limit="8"></DataMedialist>
     </div>
     <tabbar></tabbar>
   </div>

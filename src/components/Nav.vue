@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import Router from 'vue-router'
 import Swiper from '../../static/js/swiper-4.1.0.min.js'
+import Router from 'vue-router'
 import '../../static/css/swiper-4.1.0.min.css'
 import SettingBtn from '@/components/SettingBtn'
 
@@ -102,16 +102,18 @@ export default {
 </script>
 
 <style scoped>
-/* 头部fixed失效 */
-.nav {
-  position: absolute;
-  top: 0;
+.item {
+  display: inline-block;
+  font-family: '宋体';
+  font-size: 1rem;
+  box-sizing: border-box;
+  word-break: keep-all;
+  padding: .6em 0;
 }
-.item {font-family: '宋体';font-size:.8rem;padding: .5em;box-sizing: border-box;word-break: keep-all;padding: .6em;}
 .item.active {
   color: #cd6115;
 }
 .item:last-child {
-  padding-right: 10em;
+  padding-right: 9em;
 }
 </style>

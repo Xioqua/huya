@@ -1,7 +1,7 @@
 <template>
   <ul class="clearfix datalist">
     <li v-for="(mes,index) in mess" v-if="index < limit">
-      <router-link to="/liveRoom"><img :src="mes.videoCover" alt="mes.name" /></router-link>
+      <router-link to="/zhubo"><img  class="item-pic" v-lazy="mes.videoCover" alt="mes.name" /></router-link>
       <p v-text="mes.name"></p>
     </li>
   </ul>
@@ -17,7 +17,15 @@ export default {
       mess:null
     }
   },
-  props: ['json','limit'],
+  props: {
+    'json':{
+      type:String
+    },
+    'limit': {
+      type:Number,
+      default:4
+    }
+  },
   created() {
     axios.get('./static/json/'+ this.json +'.json')
          .then(res=>this.mess=res.data)

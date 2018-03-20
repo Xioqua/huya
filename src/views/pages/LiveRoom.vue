@@ -24,7 +24,6 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App',
       video: {
-        // https://ip35892529.ahcdn.com/key=BIRe0yisf6CXwJnrP4seWQ,s=,end=1521151822,limit=2/data=1521151822/state=QTEO/reftag=56109644/media=hlsA/25/177/4/74175654.m3u8
           url: 'https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/chunklist_w630020335.m3u8',
           pic: 'static/live/cover1.jpg',
           type: 'hls'

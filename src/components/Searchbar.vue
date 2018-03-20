@@ -18,9 +18,6 @@ export default {
 </script>
 
 <style scoped>
-.searchbar {
-  margin-top: 1.5em;
-}
 .searchbar > a {
   display: block;
   width: 98%;
