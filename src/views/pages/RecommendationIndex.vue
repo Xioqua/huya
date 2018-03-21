@@ -31,9 +31,6 @@
       <Delimiter/>
       <Datahead to="/mine" title="吃喝玩乐" :icon="iconTitle.chwl" breadTitle="二次元 | 美食 | 户外 | 更多 " :showRightBtn="true"/>
       <DataList json="chwl" :limit="4"></DataList>
-      <Delimiter/>
-      <Datahead to="/mine" title="星秀" :icon="iconTitle.xingxiu" breadTitle="好声音 | 潮音乐 | 更多 " :showRightBtn="true"/>
-      <DataList json="xingxiu" :limit="4"></DataList>
   </div>
 </template>
 

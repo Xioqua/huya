@@ -8,7 +8,7 @@
     <DataList json="chwl" :limit="2"></DataList>
     <Delimiter></Delimiter>
     <Datahead to="/mine" title="兴趣推荐" :icon="iconTitle.zjyx" breadTitle="" :showRightBtn="false"/>
-    <DataMedialist json="all" :limit="8"></DataMedialist>
+    <DataMedialist json="all" :limit="10"></DataMedialist>
     </div>
     <tabbar></tabbar>
   </div>
@@ -65,5 +65,6 @@ export default {
 }
 .explore .body {
   margin-top: 2.2em;
+  padding-bottom: 3.5rem;
 }
 </style>

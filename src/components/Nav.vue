@@ -37,7 +37,7 @@ export default {
         {name:'绝地求生'},
         {name:'星秀'},
         {name:'二次元'},
-        {name:'Lol'}
+        {name:'LoL'}
       ],
       nowIndex: 0,
       arr: ['/RecommendationIndex','/JueDiQiuSheng','/Lol','/ErCiYuan','/XingXiu','/ChiHeWanLe','/HuWai'],

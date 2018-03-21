@@ -14,7 +14,24 @@ export default {
   name:'Datalist',
   data () {
     return {
-      mess:null
+      mess:[
+      {
+      "name":"加载中...",
+      "videoCover":"static/dataimg/cover.jpg"
+    },
+    {
+      "name":"加载中...",
+      "videoCover":"static/dataimg/cover.jpg"
+    },
+    {
+      "name":"加载中...",
+      "videoCover":"static/dataimg/cover.jpg"
+    },
+    {
+      "name":"加载中...",
+      "videoCover":"static/dataimg/cover.jpg"
+    }
+      ]
     }
   },
   props: {

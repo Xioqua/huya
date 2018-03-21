@@ -1,6 +1,6 @@
 <template>
    <div class="setting-btn icon-in">
-    <router-link to="/setting"><i class="iconfont icon-list"></i></router-link>
+    <a href="javascript:;" @click="goSet"><i class="iconfont icon-list"></i></a>
   </div>
 </template>
 
@@ -8,7 +8,12 @@
 import '../../static/iconfont/iconfont.css'
 
 export default {
-  name: 'SettingBtn'
+  name: 'SettingBtn',
+  methods: {
+    goSet() {
+     this.$router.push({ path: 'setting' })
+    }
+  }
 }
 </script>
 

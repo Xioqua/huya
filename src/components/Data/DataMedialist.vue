@@ -2,7 +2,7 @@
   <div class="datamedialist">
     <ul>
       <li v-for="(mes,index) in mess" v-if="index < limit">
-        <img :src="mes.videoCover" alt="mes.name" />
+        <img class="item-pic" v-lazy="mes.videoCover" alt="mes.name" />
         <div>
           <h6 v-text="mes.name"></h6>
           <div class="author">小站</div>

@@ -3,7 +3,7 @@
       <Searchbar></Searchbar>
       <Slide></Slide>
       <DataTab :tabs="tabs"></DataTab>
-      <DataList json="all" :limit="30"></DataList>      
+      <DataList json="all" :limit="26"></DataList>      
   </div>
 </template>
 

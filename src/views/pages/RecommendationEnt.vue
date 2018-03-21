@@ -3,7 +3,7 @@
       <Searchbar></Searchbar>
       <Slide></Slide>
       <Datahead to="/mine" title="娱乐天地" :icon="iconTitle.wzry" breadTitle="更多 " :showRightBtn="true"/>
-      <DataList json="all" :limit="8"></DataList>
+      <DataList json="all" :limit="6"></DataList>
       <Delimiter />
       <Datahead to="/mine" title="二次元" :icon="iconTitle.phone" breadTitle="更多 " :showRightBtn="true"/>
       <DataList json="jdqs" :limit="4"></DataList>
@@ -31,9 +31,6 @@
       <Delimiter/>
       <Datahead to="/mine" title="美食" :icon="iconTitle.yxlm" breadTitle="更多 " :showRightBtn="true"/>
       <DataList json="chwl" :limit="4"></DataList>
-      <Delimiter/>
-      <Datahead to="/mine" title="奇谈" :icon="iconTitle.zjyx" breadTitle="更多 " :showRightBtn="true"/>
-      <DataList json="xingxiu" :limit="4"></DataList>
   </div>
 </template>
 

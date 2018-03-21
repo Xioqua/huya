@@ -3,7 +3,7 @@
       <Searchbar></Searchbar>
       <Slide></Slide>
       <DataTab :tabs="tabs"></DataTab>
-      <DataList json="all" :limit="30"></DataList>
+      <DataList json="all" :limit="26"></DataList>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ import DataTab from '@/components/data/DataTab'
 import DataList from '@/components/data/DataList'
 
 export default {
-    name:"RecommendationIndex",
+    name:"JueDiQiuSheng",
     data() {
         return {
             iconTitle:  {

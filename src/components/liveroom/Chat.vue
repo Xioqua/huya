@@ -1,7 +1,11 @@
 <template>
   <div class="live-chat">
-    <div class="content" v-html="msg">
+    <div class="content-before">
+      <p>系统消息: 得道多助失道寡助</p>
+      <p>木跌跌: 从善从良</p>
+      <p>胡碧霞: 众将死战非我之功</p>
     </div>
+    <div class="content" v-html="msg"></div>
     <div class="btn-wrap">
       <input type="text" placeholder="说点什么呢"  @keyup.enter="submit" ref="input">
     </div>
@@ -13,7 +17,7 @@ export default {
   name: 'Chat',
   data() {
     return {
-      msg: '這裏有一些原始數據<br>這裏有一些原始數據<br>這裏有一些原始數據<br>這裏有一些原始數據<br>這裏有一些原始數據<br>'
+      msg: ''
     }
   },
   methods: {
@@ -42,6 +46,8 @@ input{padding:0;margin:0;border:none;background:none;outline:none;}
   padding: 10px 10px;
   width: 100%;
   border-top: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 2;
 }
 .btn-wrap > input {
   width: 100%;
@@ -49,6 +55,10 @@ input{padding:0;margin:0;border:none;background:none;outline:none;}
   font-size: 20px;
   border-radius: 50px;
   background-color: #f4f4f4;
+}
+.content-before,.content {
+  font: .75rem /* 12/16 */ "宋体";
+  padding: 1em;
 }
 </style>
 

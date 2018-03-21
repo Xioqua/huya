@@ -30,22 +30,15 @@ body {
   clear: both;
 }
 
-/* 禁用移动端滚动条 bug*/
-html,body {
-  height: 100%;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-::-webkit-scrollbar {
-  display: none;
-  width: 0;
-}
-
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#app > div > .swiper-container{
+  padding-bottom: 3.5rem /* 56/16 */;
 }
 </style>

@@ -12,8 +12,10 @@
   "dependencies": {
     "animate.css": "^3.6.1",
     "dplayer": "^1.22.2",
+    "v-tap": "^3.0.3",
     "vue": "^2.5.2",
     "vue-dplayer": "0.0.9",
+    "vue-js-grid": "^1.0.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

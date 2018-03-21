@@ -46,6 +46,7 @@ var Swiper=require("../../static/js/swiper-4.1.0.min.js")
 <style scoped>
 .swiper-container {
 	width: 100%;
+	min-height: 120px;
 }
 .swiper-container img {
 	width:100%;

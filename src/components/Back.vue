@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
 .back {
-  position: fixed;
+  position: absolute;
   color: #fff;
   z-index: 999;
   left: 1%;

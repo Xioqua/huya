@@ -2,10 +2,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueLazyLoad from 'vue-lazyload'
+import vueTap from 'v-tap'
+import Grid from 'vue-js-grid'
 
+Vue.use(vueTap)
+Vue.use(Grid)
 Vue.use(VueLazyLoad,{
-  error:'./static/error.png',
-  loading:'./static/dataimg/3.jpg'
+  loading:'./static/dataimg/cover.jpg'
 })
 
 Vue.config.productionTip = false

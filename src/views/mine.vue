@@ -29,6 +29,7 @@
        <span>{{m.name}}</span>
      </div>
    </div>
+   <div class="mns"></div>
   <Tabbar></Tabbar>
 </div>
 </template>
@@ -122,14 +123,13 @@ export default {
 
 .mine_list {
   overflow: hidden;
-  margin-top: -2em;
 }
 
 .mine_list > div {
   float: left;
   width:25%;
   text-align: center;
-  margin-top: 2.4em;
+  margin: 1em 0;
 }
 .mine_list > div > div {
   display: flex;
@@ -150,5 +150,9 @@ export default {
   font-size: 18px;
   line-height: 10px;
 }
-
+.mns {
+  width: 100%;
+  height:6.25rem /* 100/16 */;
+  background-color: #eee;
+}
 </style>

@@ -19,6 +19,13 @@ import Zhubo from '@/components/liveroom/Zhubo'
 import Paihang from '@/components/liveroom/Paihang'
 import Guibin from '@/components/liveroom/Guibin'
 
+import ChiHeWanLe from '@/views/pages/ChiHeWanLe'
+import JueDiQiuSheng from '@/views/pages/JueDiQiuSheng'
+import Lol from '@/views/pages/Lol'
+import ErCiYuan from '@/views/pages/ErCiYuan'
+import XingXiu from '@/views/pages/XingXiu'
+import HuWai from '@/views/pages/HuWai'
+
 Vue.use(Router)
 
 export default new Router({
@@ -28,7 +35,16 @@ export default new Router({
       component:home
     },{
       path:'/home',
-      redirect:'/'
+      redirect:'/',
+      component:home,
+      children:[
+        {path:'/ChiHeWanLe',name:'ChiHeWanLe',component:ChiHeWanLe},
+        {path:'/JueDiQiuSheng',name:'JueDiQiuSheng',component:JueDiQiuSheng},
+        {path:'/Lol',name:'Lol',component:Lol},
+        {path:'/ErCiYuan',name:'ErCiYuan',component:ErCiYuan},
+        {path:'/XingXiu',name:'XingXiu',component:XingXiu},
+        {path:'/HuWai',name:'HuWai',component:HuWai}
+      ]
     },{
       path:'/ent',
       name:'ent',
