@@ -2,11 +2,11 @@
  <div class="swiper-box">
    <div class="swiper-container content">
      <div class="swiper-wrapper">
-       <div class="swiper-slide" v-for="(item,index) in list">
+       <v-bar class="swiper-slide" v-for="(item,index) in list" :key="index" wrapper="wrapper" vBar="verticalBarClass"  vBarInternal="verticalBarInternalClass">
          <keep-alive>
            <component :is="item.component"></component>
          </keep-alive>
-       </div>
+       </v-bar>
      </div>
    </div>
  </div>
@@ -22,8 +22,11 @@ import ErCiYuan from '@/views/pages/ErCiYuan'
 import XingXiu from '@/views/pages/XingXiu'
 import ChiHeWanLe from '@/views/pages/ChiHeWanLe'
 import HuWai from '@/views/pages/HuWai'
+
+import VBar from 'v-bar'
+
 export default {
-  components: {RecommendationEnt,JueDiQiuSheng,Lol,ErCiYuan,XingXiu,ChiHeWanLe},
+  components: {RecommendationEnt,JueDiQiuSheng,Lol,ErCiYuan,XingXiu,ChiHeWanLe,VBar},
   data() {
     return {
       list: [
@@ -67,5 +70,7 @@ export default {
 </script>
 
 <style scoped>
-
+.wrapper {
+  height: 570px;
+}
 </style>

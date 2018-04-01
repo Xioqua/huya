@@ -11,7 +11,7 @@
 import DataList from '@/components/data/DataList'
 import DataTab from '@/components/data/DataTab'
 import Slide from '@/components/Slide'
-import Searchbar from '@/components/Searchbar'
+import Searchbar from '@/components/search/Searchbar'
 
 export default {
     name:"RecommendationIndex",

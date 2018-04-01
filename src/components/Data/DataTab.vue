@@ -5,8 +5,8 @@
        {{m}}
      </span>
    </div>
-   <DataList json="all"></DataList>
    <DataList json="cjzc"></DataList>
+   <DataList json="all"></DataList>
    <DataList json="qjcj"></DataList>
    <DataList json="all"></DataList>
    <DataList json="xingxiu"></DataList>
@@ -32,6 +32,9 @@ export default {
       datatabitem[i].style.backgroundColor = '#df6e1d'
       datatabitem[i].style.color = '#fff'
       datatabitem[i].style. borderRadius = '.8em'
+
+      /*在这改变后面datalist的 json路径 */
+      
     }
   }
 }

@@ -12,6 +12,8 @@
   "dependencies": {
     "animate.css": "^3.6.1",
     "dplayer": "^1.22.2",
+    "hls.js": "^0.8.9",
+    "v-bar": "^3.0.0",
     "v-tap": "^3.0.3",
     "vue": "^2.5.2",
     "vue-dplayer": "0.0.9",

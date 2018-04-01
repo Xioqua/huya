@@ -1,7 +1,7 @@
 <template>
   <div class="explore">
     <div class="header">发现</div>
-    <div class="body">
+    <v-bar class="body" wrapper="wrapper" vBar="verticalBarClass"  vBarInternal="verticalBarInternalClass">
     <ExploreActive></ExploreActive>
     <Delimiter></Delimiter>
     <Datahead to="/mine" title="神镜头" :icon="iconTitle.yxlm" breadTitle="王者荣耀、搞笑、更多精彩" :showRightBtn="true"/>
@@ -9,7 +9,7 @@
     <Delimiter></Delimiter>
     <Datahead to="/mine" title="兴趣推荐" :icon="iconTitle.zjyx" breadTitle="" :showRightBtn="false"/>
     <DataMedialist json="all" :limit="10"></DataMedialist>
-    </div>
+    </v-bar>
     <tabbar></tabbar>
   </div>
 </template>
@@ -22,6 +22,8 @@ import DataList from '@/components/data/DataList'
 import DataMedialist from '@/components/data/DataMedialist'
 import Tabbar from '@/components/tabbar/tabbar'
 
+import VBar from 'v-bar'
+
 export default {
   name: 'Explore',
   components: {
@@ -30,7 +32,8 @@ export default {
     Datahead,
     DataList,
     DataMedialist,
-    Tabbar
+    Tabbar,
+    VBar
   },
   data() {
       return {
@@ -66,5 +69,9 @@ export default {
 .explore .body {
   margin-top: 2.2em;
   padding-bottom: 3.5rem;
+}
+
+.wrapper {
+  height: 650px;
 }
 </style>

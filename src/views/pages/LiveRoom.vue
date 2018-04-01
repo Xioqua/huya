@@ -16,7 +16,7 @@
 
 <script>
 import Back from '@/components/Back'
-import VueDPlayer from '@/components/VueDPlayerHls'
+import VueDPlayer from '@/components/liveroom/VueDPlayerHls'
 
 export default {
   name: 'LiveRoom',
@@ -58,7 +58,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .liveinfohead {
   display: flex;

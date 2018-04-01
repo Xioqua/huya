@@ -41,4 +41,21 @@ body {
 #app > div > .swiper-container{
   padding-bottom: 3.5rem /* 56/16 */;
 }
+
+html,body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*滚动条样式*/ 
+/*如何改变滚动条颜色, v-bar这个组件没有给解决方案,可在那解决别人issue*/
+.verticalBarClass {
+  width: 2px !important;
+  background-color:transparent !important;
+  margin-right: 1px !important;
+}
+.verticalBarInternalClass {
+  width: 2px !important;
+  height: 60px !important;
+}
 </style>

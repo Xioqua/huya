@@ -19,10 +19,10 @@
 </template>
 
 <script>
-import Swiper from '../../static/js/swiper-4.1.0.min.js'
 import Router from 'vue-router'
-import '../../static/css/swiper-4.1.0.min.css'
-import SettingBtn from '@/components/SettingBtn'
+import '@/../static/css/swiper-4.1.0.min.css'
+import Swiper from '@/../static/js/swiper-4.1.0.min.js'
+import SettingBtn from '@/components/setting/SettingBtn'
 
 export default {
   components: {

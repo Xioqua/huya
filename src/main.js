@@ -11,6 +11,8 @@ Vue.use(VueLazyLoad,{
   loading:'./static/dataimg/cover.jpg'
 })
 
+window.Hls = require('hls.js')
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

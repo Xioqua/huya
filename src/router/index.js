@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import SearchResult from '@/components/SearchResult'
+import SearchResult from '@/components/search/SearchResult'
 
 import Tabbar from '@/components/tabbar/tabbar'
 import home from '@/views/home'
@@ -12,7 +12,7 @@ import RecommendationIndex from '@/views/pages/RecommendationIndex'
 
 import LiveRoom from '@/views/pages/LiveRoom'
 
-import Setting from '@/components/Setting'
+import Setting from '@/components/setting/Setting'
 
 import Chat from '@/components/liveroom/Chat'
 import Zhubo from '@/components/liveroom/Zhubo'

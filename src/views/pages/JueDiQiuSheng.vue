@@ -9,7 +9,7 @@
 
 <script>
 import Slide from '@/components/Slide'
-import Searchbar from '@/components/Searchbar'
+import Searchbar from '@/components/search/Searchbar'
 import DataTab from '@/components/data/DataTab'
 import DataList from '@/components/data/DataList'
 

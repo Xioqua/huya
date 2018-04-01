@@ -39,7 +39,7 @@ import Datahead from '@/components/data/Datahead'
 import DataList from '@/components/data/DataList'
 import Delimiter from '@/components/Delimiter'
 import Slide from '@/components/Slide'
-import Searchbar from '@/components/Searchbar'
+import Searchbar from '@/components/search/Searchbar'
 
 export default {
     name:"RecommendationIndex",
